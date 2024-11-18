@@ -1,0 +1,365 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body {
+	background-color: #CFC3E0;
+}
+h1 {
+	color: #2F2E2E; /*almost black*/
+	font-family: wireone-regular, Times New Roman, Serif;
+	font-size: 64px;
+}
+h2 {
+	color: #2F2E2E;
+}
+@font-face { /*Header Font */
+	font-family: 'wireone-regular'; /*Use this name for the font*/
+	src: url(assets/fonts/WireOne-Regular.ttf);
+}
+p {
+	color: #2F2E2E;
+	font-family: verdana, sans-serif;
+}
+/* new header */
+.logo h1{
+	color: #2F2E2E;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: wireone-regular, times new roman, serif;
+	font-size: 64px;
+	line-height: 48px;
+	font-weight: 500;
+	padding: 10px;
+}
+		/* Navigation menu styling*/
+			body {
+				font-family: verdana, sans-serif;
+				font-size: 32px;
+			}
+			nav.header {
+				background: #8966A4; /*Deep purple, not the band*/
+				padding: 0 15px;
+			}
+			a {
+				color: #2F2E2E;
+				text-decoration: none;
+			}
+			.menu,
+			.submenu {   
+				list-style-type: none;
+			}
+			.item {
+				padding: 10px;
+			}
+			.item.home { /* identical to item, only seoereated so Home can come before contact in order */
+				padding: 10px;
+			}
+			.item.button {
+				padding: 9px 5px;
+				}
+			@media all and (max-width: 700px) { /* Only for mobile version, so contact will turn yellow on hover for mobile but not for tablet or desktop */
+				.item a:hover,
+				.item a:hover::after {
+					color: #FFC107 /* yellow */;
+				}
+			}
+		/* Navigation menu mobile */
+			.menu {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.menu li a{
+				display: block;
+				padding: 15px 5px;
+			}
+			.menu li.subitem a{
+				padding: 15px;
+			}
+			.toggle {
+				order: 1;
+				font-size: 50px;
+				font-weight: 100;
+			}
+			.toggle p{ /*font for the word menu in header*/
+				font-family: wireone-regular, new times roman, serif;
+				font-weight: 600;
+				font-size: 40px;
+			}
+			.item.home {
+				order: 2;
+			}
+			.item.button {
+				order: 3;
+			}
+			.item {
+				order: 4;
+				width: 100%;
+				text-align: center;
+				display: none;
+			}				
+			.active .item {
+				display: block;
+			}
+			/*submenu navigation*/
+				.submenu {
+					display: none;
+				}
+				.submenu-active .submenu {
+					display: block;
+				}
+				.has-submenu > a::after {
+					font-family: "Phosphor-Thin";
+   					font-size: 24px;
+    				line-height: 32px;
+    				font-weight: 700; 
+    				content: "  \e050"; /*arrow pointing down*/
+    				color: #2F2E2E;
+    				padding-left: 5px;
+				}
+				.subitem a {
+					padding: 10px 15px;
+				}
+				.submenu-active {
+					background-color: #8966A4;
+					border-radius: 3px;
+				}
+				.toggle span {
+					vertical-align: -7px; /*lines up the icons with the text */
+				}
+				.toggle :hover {
+					color: #FFC107 /* yellow */;
+				}
+		/* navigation menu extras: tablet */
+			/* makes the scaling possible */
+			@media all and (min-width: 700px) {
+				.menu {
+					justify-content: center;
+				}
+				.logo {
+					flex: 1;
+				}
+				.item.button {
+					width: auto;
+					order: 1;
+					display: block;
+				}
+				.toggle {
+					flex: 1;
+					text-align: right;
+					order: 2;
+				}
+				.item.home {
+					order: 3;
+				}
+				.item {
+					order: 4;
+				}
+				.item:not(.button) a:hover,
+				.item a:hover::after {
+					color: #FFC107 /* yellow */;
+				}
+					/* shows the contact button */
+					.menu li.button a {
+						padding: 10px 15px;
+						margin: 5px 0;
+					}
+					.button a {
+						background: #FFC107;
+						border-radius: 15px;
+					}
+					.button a:hover {
+						text-decoration: none;
+					}
+					.button:not(.secondary) a:hover {
+						background: #cbc1a3; /*TEMPORARY, change once dropshadows moving can be figured out */
+					}
+				}
+		/* navigation menu extras: Desktop */
+			/*makes the scaling possible */
+			@media all and (min-width: 960px) {
+				.menu {
+					align-items: center;     
+					flex-wrap: nowrap;
+					background: none;
+				}
+				.logo {
+					order: 0;
+				}
+				.item.home {
+					order: 1;
+					position: relative;
+					display: block; 
+					width: auto;
+				}
+				.item {
+					order: 2;
+					position: relative;
+					display: block; 
+					width: auto;
+				}
+				.item.button {
+					order: 3;
+				}
+				.submenu-active .submenu {
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 68px;
+					background: #8966A4;
+				}
+				.toggle {
+					display: none;
+				}
+				.submenu-active {
+					border-radius: 0;
+				}
+				.item:not(.button) a:hover,
+				.item a:hover::after {
+					color: #FFC107 /* yellow */;
+				}
+			}
+/* footer */
+footer {
+	height: 300px;
+	background-color: #8966A4;
+	margin-top: 15px; /* adds space BEFORE ABOVE the purple */
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	text-decoration: none;
+	color: #2F2E2E;
+}
+.footerhover a:hover {
+	color: #FFC107 /* yellow */;
+}
+.RTTbox :hover,
+button#RTT :hover::before { /*hover yellow for RTT button */
+	color: #FFC107 /* yellow */;
+}
+.footerhover span {
+	vertical-align: -2px; /*lines up the icons with the text */
+}
+
+#RTT { /* Return to top button styling */
+	border: none;
+	outline: none;
+	color:#2F2E2E;
+	cursor: pointer;
+	font-size: 18px;
+	background-color: transparent;
+}
+
+footer nav {
+	display: block;
+	text-align: left;
+	padding-right: 7%;
+}
+/* Grid organisation for footer*/
+	.personaldetails {
+		grid-row-start: 2;
+		grid-row-end: 5;
+		grid-column-start: 1;
+		grid-column-end: 8;
+	}
+	.RTTbox {
+		grid-row-start: 9;
+		grid-row-end: 10;
+		grid-column-start: 6;
+		grid-column-end: 7;
+	}
+	.contactdetails {
+		grid-row-start: 3;
+		grid-row-end: 5;
+		grid-column-start: 10;
+		grid-column-end: 11;
+	}
+		/* footer fonts */
+			.footername {
+				font-size: 32px;
+			}
+			.footerbody {
+				font-size: 18px;
+			}
+			/* spacing for name section */
+				.personaldetails li.footerbodyli {
+					margin-bottom: 5px;
+				}
+				.personaldetails li.footernameli {
+					margin-bottom: 20px;
+				}
+			/* spacing for contact section */
+				li.footerhover {
+					margin-bottom: 2px;
+				}
+			#footercontactbody {
+				font-size: 28px;
+				white-space: nowrap;
+			}
+			.RTTbox span.RTTnowrap {
+				white-space: nowrap;
+			}
+			.RTTarrow {
+				vertical-align: 1px;
+			}
+			button#RTT span::before { /* arrow on top of RTT */
+				font-family: "Phosphor-Thin";
+				content: '\e13c'; /* up arrow */
+				display: block;
+				font-size: 26px;
+				font-style: normal;
+				font-weight: 600;
+				color: #2F2E2E;
+			}
+	@media all and (max-width: 700px) { /* hides the name info on mobile */
+		.personaldetails {
+			display: none;
+		}
+	}
+	@media all and (max-width: 700px) { /* centres the contact info on mobile */
+		.contactdetails {
+			grid-row-start: 2;
+			grid-row-end: 5;
+			grid-column-start: 5;
+			grid-column-end: 11;
+		}
+	}
+/* name element on homepage */
+.nametitle {
+	display: grid;
+	grid-template-columns: repeat(34, 1fr);
+	grid-template-rows: repeat(23, 1fr);
+	text-decoration: none;
+}
+	.name {
+		grid-column-start: 3;
+		grid-column-end: 23;
+		grid-row-start: 3;
+		grid-row-end: 15;
+	}
+	.name h1{
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 230px;
+		line-height: 220px;
+		font-weight: 300;
+		white-space: nowrap;
+	}
+	.name h2{
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 80px;
+		padding: 0px 30px;
+		font-weight: 300;
+		white-space: nowrap;
+	}
+	.titleprofile {
+		grid-column-start: 21;
+		grid-column-end: 33;
+		grid-row-start: 3;
+		grid-row-end: 13;
+	}
+	
