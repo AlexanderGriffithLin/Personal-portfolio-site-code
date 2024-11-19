@@ -357,7 +357,7 @@ footer nav {
 	}
 /* TITLE BLOCK */
 /* web */
-@media all and (min-width: 960px) {
+@media all and (min-width: 1220px) {
 	.nametitle {
 		display: grid;
 		grid-template-columns: repeat(35, 1fr);
@@ -394,39 +394,43 @@ footer nav {
 				white-space: nowrap;
 			}
 		/* Profile picture */
-		.titleprofile {
-		grid-column-start: 22;
-		grid-column-end: 34;
-		grid-row-start: 3;
-		grid-row-end: 13;
+		.picturetitle{
+			text-decoration: none;
+			grid-column-start: 22;
+			grid-column-end: 35;
+			grid-row-start: 3;
+			grid-row-end: 16;
 		}
-		/* Button */
-		.linkbuttontitle {
-			grid-column-start: 26;
-			grid-column-end: 30;
-			grid-row-start: 15;
-			grid-row-end: 17;
-			
+			.titleprofile {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
-			 /* Useful button for elsewhere too! */
-			.linkbutton {
-				margin-top: 22px;
-				display: block;
-				padding: 15px 5px;
-				font-family: verdana, sans-serif;
-				font-size: 22px;
-				text-align: center;
-				background-color:#FFC107;
-				border-radius: 15px;
-				color:#2F2E2E;
+			/* Button */
+			.linkbuttontitle {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
-			.linkbuttontitle a:hover { /* when copying, .______ with relevant class tag */
-				text-decoration: none;
-				background-color: #cbc1a3;
-			}
+				/* Useful button for elsewhere too! */
+				.linkbutton {
+					margin-top: 22px;
+					display: block;
+					padding: 15px 5px;
+					font-family: verdana, sans-serif;
+					font-size: 22px;
+					text-align: center;
+					background-color:#FFC107;
+					border-radius: 15px;
+					color:#2F2E2E;
+				}
+				.linkbuttontitle a:hover { /* when copying, .______ with relevant class tag */
+					text-decoration: none;
+					background-color: #cbc1a3;
+				}
 }
 /* ABOUT BLOCK */
-/* web */
+/* web wide*/
 @media all and (min-width: 960px) {
 	.about {
 		display: grid;
