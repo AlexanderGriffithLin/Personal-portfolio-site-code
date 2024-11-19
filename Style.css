@@ -252,7 +252,7 @@ footer {
 	background-color: #8966A4;
 	margin-top: 15px; /* adds space BEFORE ABOVE the purple */
 	display: grid;
-	grid-template-columns: repeat(11, 1fr);
+	grid-template-columns: repeat(22, 1fr);
 	grid-template-rows: repeat(10, 1fr);
 	text-decoration: none;
 	color: #2F2E2E;
@@ -288,26 +288,28 @@ footer nav {
 		grid-row-start: 2;
 		grid-row-end: 5;
 		grid-column-start: 2;
-		grid-column-end: 8;
+		grid-column-end: 16;
 	}
 	.RTTbox {
 		grid-row-start: 9;
-		grid-row-end: 10;
-		grid-column-start: 6;
-		grid-column-end: 7;
+		grid-row-end: 11;
+		grid-column-start: 11;
+		grid-column-end: 13;
 	}
 	.contactdetails {
 		grid-row-start: 3;
 		grid-row-end: 5;
-		grid-column-start: 10;
-		grid-column-end: 11;
+		grid-column-start: 19;
+		grid-column-end: 21;
 	}
 		/* footer fonts */
 			.footername {
 				font-size: 32px;
+				font-weight: bold;
 			}
 			.footerbody {
 				font-size: 18px;
+				line-height: 40px;
 			}
 			/* spacing for name section */
 				.personaldetails li.footerbodyli {
@@ -323,6 +325,7 @@ footer nav {
 			#footercontactbody {
 				font-size: 28px;
 				white-space: nowrap;
+				line-height: 45px;
 			}
 			.RTTbox span.RTTnowrap {
 				white-space: nowrap;
