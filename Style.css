@@ -36,13 +36,11 @@ p {
 	padding: 10px;
 }
 		/* Navigation menu styling*/
-			body {
-				font-family: verdana, sans-serif;
-				font-size: 32px;
-			}
 			nav.header {
 				background: #8966A4; /*Deep purple, not the band*/
 				padding: 0 15px;
+				font-family: verdana, sans-serif;
+				font-size: 32px;
 			}
 			a {
 				color: #2F2E2E;
@@ -183,6 +181,25 @@ p {
 		/* navigation menu extras: Desktop */
 			/*makes the scaling possible */
 			@media all and (min-width: 960px) {
+				nav.header { /* resized text for desktop header */
+					background: #8966A4;
+					padding: 0 15px;
+					font-family: verdana, sans-serif;
+					font-size: 20px;
+				}
+				.has-submenu {
+					padding-top: 17px; /* adjusts the projects button to be in line with other buttons */
+				}
+				.has-submenu > a::after {
+					font-family: "Phosphor-Thin"; /* resized arrow for desktop header, line up nicely */
+   					font-size: 20px;
+    				line-height: 20px;
+    				font-weight: 700; 
+    				content: "\e050"; /*arrow pointing down*/
+    				color: #2F2E2E;
+    				padding-left: 5px;
+					vertical-align: -8px;
+				}
 				.menu {
 					align-items: center;     
 					flex-wrap: nowrap;
@@ -196,12 +213,14 @@ p {
 					position: relative;
 					display: block; 
 					width: auto;
+					margin-right: 2%;
 				}
 				.item {
 					order: 2;
 					position: relative;
 					display: block; 
 					width: auto;
+					margin-right: 2%;
 				}
 				.item.button {
 					order: 3;
@@ -209,9 +228,12 @@ p {
 				.submenu-active .submenu {
 					display: block;
 					position: absolute;
-					left: 0;
+					left: -140%;
 					top: 68px;
 					background: #8966A4;
+					padding-top: 40px;
+					text-align: left;
+					white-space: nowrap;
 				}
 				.toggle {
 					display: none;
@@ -234,6 +256,7 @@ footer {
 	grid-template-rows: repeat(10, 1fr);
 	text-decoration: none;
 	color: #2F2E2E;
+	font-family: verdana, sans-serif;
 }
 .footerhover a:hover {
 	color: #FFC107 /* yellow */;
