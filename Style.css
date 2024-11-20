@@ -431,23 +431,25 @@ footer nav {
 }
 /* ABOUT BLOCK */
 /* web wide*/
-@media all and (min-width: 960px) {
+@media all and (min-width: 1220px) {
 	.about {
 		display: grid;
-		grid-template-columns: repeat(35, 1fr);
-		grid-template-rows: repeat(17, 2fr);
+		grid-template-columns: 3fr 15fr 1fr 13fr 3fr;
+		grid-template-rows: repeat(17, 1fr);
 		text-decoration: none;
 		height:650px;
 	}
+	.innerabout image {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
 		.aboutimage {
-			grid-column-start: 4;
-			grid-column-end: 19;
-			grid-row-start: 2;
+			grid-column: 2;
+			grid-row-start: 4;
 			grid-row-end: 17;
 		}
 		.abouttitle {
-			grid-column-start: 20;
-			grid-column-end: 25;
+			grid-column: 4;
 			grid-row-start: 4;
 			grid-row-end: 6;
 		}
@@ -456,8 +458,7 @@ footer nav {
 			font-weight: 300;
 		}
 		.aboutbody {
-			grid-column-start: 20;
-			grid-column-end: 32;
+			grid-column: 4;
 			grid-row-start: 6;
 			grid-row-end: 14;
 		}
@@ -468,10 +469,12 @@ footer nav {
 			font-weight: 300;
 		}
 		.linkbuttonabout {
-			grid-column-start: 21;
-			grid-column-end: 26;
+			grid-column-start: 4;
 			grid-row-start: 15;
-			grid-row-end: 17;	
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
 		}
 			 /* Useful button for elsewhere too! */
 			 .linkbuttonaboutbtt {
@@ -489,5 +492,12 @@ footer nav {
 				text-decoration: none;
 				background-color: #cbc1a3;
 			}
+			/* ADD display:none for narrow version of profile image when you create that!!!!!!! */
+}
+/* narrow */
+@media all and (max-width: 1220px) {
+	.aboutimage {
+		display: none;
+	}
 }
 	
