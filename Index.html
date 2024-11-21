@@ -8,6 +8,9 @@
 				<!-- This links to the CSS file -->
 			<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css">
 				<!-- This links to the font used for icons in the header-->
+
+				<!-- Bootstrap 5.3.3 JavaScript, CSS was copy&pasted into custom .css file-->
+					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 		</head>
 
 		<body>
@@ -20,7 +23,7 @@
 							<li class="item home"><a href="#">Home</a></li>
 							<li class="item"><a href="#">About</a></li>
 							<li class="item has-submenu">
-								<a tabindex="0">Projects</a>
+								<a tabindex="0" title="Click to open">Projects</a>
 								<ul class="submenu">
 									<li class="subitem"><a href="#">Project 1: Poster Design</a> </li>
 									<li class="subitem"><a href="#">Project 2: Game Analysis</a> </li>
@@ -68,8 +71,8 @@
 					<section class="aboutbody">
 						<p>
 							Welcome to my portfolio site. I am a third year applied psychology and technology student at
-							the Dún Laoghaire Institute of Art, Design, and Technology (IADT), as student member of the Psychological Society
-							of Ireland and an ordinary committee member of the student Psych soc at IADT. <br> I am a hardworking, dedicated, and 
+							the Dún Laoghaire Institute of Art, Design, and Technology (IADT), a student member of the Psychological Society
+							of Ireland, and an ordinary committee member of the student Psych soc at IADT. <br> I am a hardworking, dedicated, and 
 							passionate student with a keen interest in both developmental psychology and UX design.
 						</p>
 					</section>
@@ -79,9 +82,89 @@
 				</article>
 				<!-- end About section-->
 				<!-- Projects section-->
+				 <main id="main-content">
+					<section id="carousel" class="carousel slide">
+						<div class="carousel-indicators">
+						  <button type="button" data-bs-target="#carouses" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+						  <div class="carousel-item active c-item">
+							<img src="assets/images/zPLACEHOLDER.jpg" class="d-block w-100 c-img" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							  <h5>First slide label</h5>
+							  <p>Some representative placeholder content for the first slide.</p>
+							</div>
+						  </div>
+						  <div class="carousel-item c-item">
+							<img src="assets/images/zPLACEHOLDER.jpg" class="d-block w-100 c-img" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							  <h5>Second slide label</h5>
+							  <p>Some representative placeholder content for the second slide.</p>
+							</div>
+						  </div>
+						  <div class="carousel-item c-item">
+							<img src="assets/images/zPLACEHOLDER.jpg" class="d-block w-100 c-img" alt="...">
+							<div class="carousel-caption d-none d-md-block">
+							  <h5>Third slide label</h5>
+							  <p>Some representative placeholder content for the third slide.</p>
+							</div>
+						  </div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Next</span>
+						</button>
+					</section>
+
+				 </main>
 				<!-- end Projects section-->
 				<!-- CV section-->
+				 <article class="CVblock">
+					<section class="CVimage">
+						<section class="innerCVimage">
+						<img src="assets/images/zPLACEHOLDER.jpg" alt="Placeholder" style="width:100%;height:100%;"> <!--PLACEHOLDER replace image and alt text -->
+						</section>
+					</section>
+					<section class="CVtitle">
+						<h1>Cirriculum Vitae</h1>
+					</section>
+					<section class="CVbody">
+						<p>
+							Thank you for visiting my portfolio site. If you would like to view my academic achievements,
+							employment history, and skillsets, feel free to examine my CV.
+						</p>
+					</section>
+					<section class="linkbuttonCV">
+						<a class="linkbuttonCVbtt" href="#">My CV</a>
+					</section>
+				 </article>
 				<!-- end CV section-->
+				<!-- Video Block, Cut & Paste to neccesarry pages-->
+				 <article>
+					<section class="videosection">
+						<section class="videotitle">
+							<h1>Final Product</h1>
+						</section>
+						<section class="videoblock">
+							<section class="videoembed">
+								<iframe
+									src="https://www.youtube.com/embed/tgbNymZ7vqY"
+									style="height:515px;width:100%;">
+								</iframe>
+							</section>
+						</section>
+						<section class="videodesc">
+							<p> Above is the final video that was uploaded.</p>
+						</section>
+					</section>
+				 </article>
+				 <!-- End video block-->
 				<!-- start footer bar-->
 				<footer>
 					<ul class="personaldetails">
