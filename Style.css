@@ -346,7 +346,7 @@ footer nav {
 				font-weight: 600;
 				color: #2F2E2E;
 			}
-	@media all and (max-width: 1220px) { /* hides the name info on mobile */
+	@media all and (max-width: 1219px) { /* hides the name info on mobile */
 		.personaldetails {
 			display: none;
 		}
@@ -368,7 +368,173 @@ footer nav {
 		}
 	}
 /* TITLE BLOCK */
-/* web */
+/* mobile */
+.nametitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-decoration: none;
+	height: 650px;
+	margin-top: 100px;
+}
+	/* name element on homepage */
+	.name {
+		text-decoration: none;
+		}
+		.name h1{
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 180px;
+			line-height: 132px;
+			font-weight: 300;
+			white-space: nowrap;
+			margin-top: 10px;
+		}
+	.namesubtitle {
+		text-decoration: none;
+	}
+		.namesubtitle h2{
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 60px;
+			padding: 0px 30px;
+			font-weight: 300;
+			white-space: nowrap;
+		}
+		/* Button */
+		.linkbuttontitle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+			/* Useful button for elsewhere too! */
+			.linkbutton {
+				margin-top: 22px;
+				display: block;
+				padding: 15px 5px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttontitle a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+/* tablet */
+@media all and (min-width: 700px) {
+	.nametitle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-decoration: none;
+		height: 650px;
+		margin-top: 100px;
+	}
+		/* name element on homepage */
+		.name {
+			text-decoration: none;
+			}
+			.name h1{
+				font-family: wireone-regular, times new roman, serif;
+				font-size: 200px;
+				line-height: 150px;
+				font-weight: 300;
+				white-space: nowrap;
+				margin-top: 10px;
+			}
+		.namesubtitle {
+			text-decoration: none;
+		}
+			.namesubtitle h2{
+				font-family: wireone-regular, times new roman, serif;
+				font-size: 60px;
+				padding: 0px 30px;
+				font-weight: 300;
+				white-space: nowrap;
+			}
+			/* Button */
+			.linkbuttontitle {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+				/* Useful button for elsewhere too! */
+				.linkbutton {
+					margin-top: 22px;
+					display: block;
+					padding: 15px 5px;
+					font-family: verdana, sans-serif;
+					font-size: 22px;
+					text-align: center;
+					background-color:#FFC107;
+					border-radius: 15px;
+					color:#2F2E2E;
+				}
+				.linkbuttontitle a:hover { /* when copying, .______ with relevant class tag */
+					text-decoration: none;
+					background-color: #cbc1a3;
+				}
+}
+/*web narrow */
+@media all and (min-width: 960px) {
+	.nametitle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-decoration: none;
+		height: 650px;
+		margin-top: 100px;
+	}
+		/* name element on homepage */
+		.name {
+			text-decoration: none;
+			}
+			.name h1{
+				font-family: wireone-regular, times new roman, serif;
+				font-size: 200px;
+				line-height: 150px;
+				font-weight: 300;
+				white-space: nowrap;
+				margin-top: 10px;
+			}
+		.namesubtitle {
+			text-decoration: none;
+		}
+			.namesubtitle h2{
+				font-family: wireone-regular, times new roman, serif;
+				font-size: 60px;
+				padding: 0px 30px;
+				font-weight: 300;
+				white-space: nowrap;
+			}
+			/* Button */
+			.linkbuttontitle {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+				/* Useful button for elsewhere too! */
+				.linkbutton {
+					margin-top: 22px;
+					display: block;
+					padding: 15px 5px;
+					font-family: verdana, sans-serif;
+					font-size: 22px;
+					text-align: center;
+					background-color:#FFC107;
+					border-radius: 15px;
+					color:#2F2E2E;
+				}
+				.linkbuttontitle a:hover { /* when copying, .______ with relevant class tag */
+					text-decoration: none;
+					background-color: #cbc1a3;
+				}
+}
+/* web wide*/
 @media all and (min-width: 1220px) {
 	.nametitle {
 		display: flex;
@@ -448,8 +614,9 @@ footer nav {
 			grid-row-start: 4;
 			grid-row-end: 6;
 		}
-		.abouttitle h1 {
-			font-size: 64;
+		.abouttitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
 			font-weight: 300;
 		}
 		.aboutbody {
@@ -489,7 +656,7 @@ footer nav {
 			}
 }
 /* narrow */
-@media all and (max-width: 1220px) {
+@media all and (max-width: 1219px) {
 	.aboutimage {
 		display: none;
 	}
@@ -521,8 +688,9 @@ footer nav {
 			grid-row-start: 6;
 			grid-row-end: 8;
 		}
-		.CVtitle h1 {
-			font-size: 64;
+		.CVtitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
 			font-weight: 300;
 		}
 		.CVbody {
@@ -546,7 +714,7 @@ footer nav {
 		}
 			 /* Useful button for elsewhere too! */
 			 .linkbuttonCVbtt {
-				margin-top: -22px;
+				margin-top: -10px;
 				display: block;
 				padding: 15px 20px;
 				font-family: verdana, sans-serif;
@@ -563,7 +731,7 @@ footer nav {
 			/* ADD display:none for narrow version of profile image when you create that!!!!!!! */	
 }
 /* narrow */
-@media all and (max-width: 1220px) {
+@media all and (max-width: 1219px) {
 	.CVimage {
 		display: none;
 	}
@@ -583,6 +751,11 @@ footer nav {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+		}
+		.videotitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: 300;
 		}
 		.videoblock {
 			grid-column-start: 2;
@@ -620,7 +793,7 @@ footer nav {
 .c-buttonbox {
 	display: flex;
 	align-items: center;
-	margin-left: 7%;
+	margin-left: 9%;
 }	
 			 /* Useful button for elsewhere too! */
 			 .c-button {
@@ -640,7 +813,7 @@ footer nav {
 			}
 .c-inner-img {
 	margin-bottom: 30px;
-	margin-inline-start: 23.25%;
+	margin-inline-start: 21%;
 }
 .c-inner-img-caption {
 	margin-bottom: 30px;
@@ -664,19 +837,40 @@ footer nav {
 	height: 18px;
 	border-radius: 100%;
 	background-color:#ffffc5;
- }
+}
  .carousel .carousel-indicators button.active  {
 	width: 18px;
 	height: 18px;
 	border-radius: 0%;
-	background-color:#FFC107;
- }
+	background-color: #FFC107;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
 	/* wide */
 @media all and (min-width: 1220px) {
 	.carouselbox {
 		display: grid;
 		grid-template-columns: 1fr 5fr 1fr;
 		grid-template-rows: 1fr 8fr 1fr;
+	}
+	.project-block-title {
+		display: grid;
+		grid-template-columns: 1fr 5fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	.project-title {
+		grid-column: 2;
+		grid-row: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.project-block-title h2 {
+		font-size: 86px;
+		font-family: wireone-regular, times new roman, serif;
+		font-weight: 300;
 	}
 	.c-grid {
 		grid-column: 2;
