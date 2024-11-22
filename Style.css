@@ -5,6 +5,10 @@
 	text-decoration: none;
 	box-sizing: border-box;
 }
+img:not(.c-img) {
+	max-height: 540px;
+	max-width: 720px;
+}
 body {
 	background-color: #CFC3E0;
 }
@@ -253,7 +257,7 @@ footer {
 	margin-top: 15px; /* adds space BEFORE ABOVE the purple */
 	display: grid;
 	grid-template-columns: repeat(22, 1fr);
-	grid-template-rows: repeat(10, 1fr);
+	grid-template-rows: repeat(20, 1fr);
 	text-decoration: none;
 	color: #2F2E2E;
 	font-family: verdana, sans-serif;
@@ -286,20 +290,20 @@ footer nav {
 /* Grid organisation for footer*/
 	.personaldetails {
 		grid-row-start: 2;
-		grid-row-end: 5;
+		grid-row-end: 15;
 		grid-column-start: 2;
 		grid-column-end: 16;
 	}
 	.RTTbox {
-		grid-row-start: 9;
-		grid-row-end: 11;
+		grid-row-start: 16;
+		grid-row-end: 18;
 		grid-column-start: 11;
 		grid-column-end: 13;
 	}
 	.contactdetails {
 		grid-row-start: 3;
-		grid-row-end: 5;
-		grid-column-start: 19;
+		grid-row-end: 16;
+		grid-column-start: 18;
 		grid-column-end: 21;
 	}
 		/* footer fonts */
@@ -342,15 +346,23 @@ footer nav {
 				font-weight: 600;
 				color: #2F2E2E;
 			}
-	@media all and (max-width: 700px) { /* hides the name info on mobile */
+	@media all and (max-width: 1220px) { /* hides the name info on mobile */
 		.personaldetails {
 			display: none;
+		}
+	}
+	@media all and (max-width: 1220px) { /* centres the contact info on tablet */
+		.contactdetails {
+			grid-row-start: 2;
+			grid-row-end: 15;
+			grid-column-start: 9;
+			grid-column-end: 11;
 		}
 	}
 	@media all and (max-width: 700px) { /* centres the contact info on mobile */
 		.contactdetails {
 			grid-row-start: 2;
-			grid-row-end: 5;
+			grid-row-end: 15;
 			grid-column-start: 5;
 			grid-column-end: 11;
 		}
@@ -359,18 +371,17 @@ footer nav {
 /* web */
 @media all and (min-width: 1220px) {
 	.nametitle {
-		display: grid;
-		grid-template-columns: repeat(35, 1fr);
-		grid-template-rows: repeat(17, 2fr);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 		text-decoration: none;
-		height:650px;
+		height: 650px;
+		margin-top: 100px;
 	}
 		/* name element on homepage */
 		.name {
-			grid-column-start: 3;
-			grid-column-end: 23;
-			grid-row-start: 3;
-			grid-row-end: 11;
+			text-decoration: none;
 			}
 			.name h1{
 				font-family: wireone-regular, times new roman, serif;
@@ -381,10 +392,7 @@ footer nav {
 				margin-top: 10px;
 			}
 		.namesubtitle {
-			grid-column-start: 3;
-			grid-column-end: 23;
-			grid-row-start: 15;
-			grid-row-end: 17;
+			text-decoration: none;
 		}
 			.namesubtitle h2{
 				font-family: wireone-regular, times new roman, serif;
@@ -392,19 +400,6 @@ footer nav {
 				padding: 0px 30px;
 				font-weight: 300;
 				white-space: nowrap;
-			}
-		/* Profile picture */
-		.picturetitle{
-			text-decoration: none;
-			grid-column-start: 22;
-			grid-column-end: 35;
-			grid-row-start: 3;
-			grid-row-end: 16;
-		}
-			.titleprofile {
-				display: flex;
-				align-items: center;
-				justify-content: center;
 			}
 			/* Button */
 			.linkbuttontitle {
@@ -492,7 +487,6 @@ footer nav {
 				text-decoration: none;
 				background-color: #cbc1a3;
 			}
-			/* ADD display:none for narrow version of profile image when you create that!!!!!!! */
 }
 /* narrow */
 @media all and (max-width: 1220px) {
@@ -520,7 +514,7 @@ footer nav {
 		.CVimage {
 			grid-column: 4;
 			grid-row-start: 4;
-			grid-row-end: 17;
+			grid-row-end: 15;
 		}
 		.CVtitle {
 			grid-column: 2;
@@ -651,8 +645,32 @@ footer nav {
 .c-inner-img-caption {
 	margin-bottom: 30px;
 	width: 280px;
-	background-color: white;
+	background-color: #ffffc5;
+	border-radius: 20px;
 }
+.carousel .carousel-indicators {
+	position: absolute;
+	bottom: -70px;
+	left: 50%;
+	z-index: 15;
+	width: 60%;
+	padding-left: 0;
+	margin-left: -30%;
+	text-align: center;
+	list-style: none; 
+}
+.carousel .carousel-indicators button {
+    width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	background-color:#ffffc5;
+ }
+ .carousel .carousel-indicators button.active  {
+	width: 18px;
+	height: 18px;
+	border-radius: 0%;
+	background-color:#FFC107;
+ }
 	/* wide */
 @media all and (min-width: 1220px) {
 	.carouselbox {
@@ -665,3 +683,20 @@ footer nav {
 		grid-row: 2;
 	}
 }
+
+/* Skip to mainn content */
+.skip-to-main-content-link {
+	position: absolute;
+	left: -9999px;
+	z-index: 999;
+	padding: 1em;
+	background-color: #FFC107;
+	color: #2F2E2E;
+	opacity: 0;
+  }
+  
+  .skip-to-main-content-link:focus {
+	left: 50%; 
+	transform: translateX(-50%);
+	opacity: 1;
+  }
