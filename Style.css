@@ -359,12 +359,18 @@ footer nav {
 			grid-column-end: 11;
 		}
 	}
-	@media all and (max-width: 700px) { /* centres the contact info on mobile */
+	@media all and (max-width: 700px) { /* right aligns the contact info and RTT on mobile */
 		.contactdetails {
 			grid-row-start: 2;
 			grid-row-end: 15;
-			grid-column-start: 5;
-			grid-column-end: 11;
+			grid-column-start: 2;
+			grid-column-end: 9;
+		}
+		.RTTbox {
+			grid-row-start: 16;
+			grid-row-end: 18;
+			grid-column-start: 10;
+			grid-column-end: 13;
 		}
 	}
 /* TITLE BLOCK */
@@ -869,16 +875,132 @@ footer nav {
 				background-color: #cbc1a3;
 			}
 }
-
-/* PROJECTS BLOCK */
-
 /* CV BLOCK */
-/* wide */
-@media all and (min-width: 1220px) {
+/* mobile */
+.CVimage {
+	display: none;
+}
+.CVblock {
+	display: grid;
+	grid-template-columns: .5fr .5fr 6fr .5fr .5fr;
+	grid-template-rows: repeat(17 1fr);
+	text-decoration: none;
+}
+	.CVtitle {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	.CVtitle h2 {
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 86px;
+		font-weight: 300;
+		text-align: center;
+	}
+	.CVbody {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 9;
+		grid-row-end: 15;
+		margin-top: 20px;
+	}
+	.CVbody p {
+		font-family: verdana, sans-serif;
+		font-size: 16px;
+		text-align: justify;
+		font-weight: 300;
+	}
+	.linkbuttonCV {
+		margin-top: 20px;
+		grid-column-start: 3;
+		grid-row-start: 15;
+		grid-row-end: 17;
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+	}
+		 /* Useful button for elsewhere too! */
+		 .linkbuttonCVbtt {
+			margin-top: -22px;
+			display: block;
+			padding: 15px 10px;
+			font-family: verdana, sans-serif;
+			font-size: 22px;
+			text-align: center;
+			background-color:#FFC107;
+			border-radius: 15px;
+			color:#2F2E2E;
+		}
+		.linkbuttonCV a:hover { /* when copying, .______ with relevant class tag */
+			text-decoration: none;
+			background-color: #cbc1a3;
+		}
+/* tablet */
+@media all and (min-width: 700px) {
+	.CVimage {
+		display: none;
+	}
+	.CVblock {
+		display: grid;
+		grid-template-columns: 1fr .5fr 5fr .5fr 1fr;
+		grid-template-rows: repeat(17 1fr);
+		text-decoration: none;
+	}
+		.CVtitle {
+			grid-column: 3;
+			grid-row: 1;
+		}
+		.CVtitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 86px;
+			font-weight: 300;
+			text-align: center;
+		}
+		.CVbody {
+			grid-column-start: 2;
+			grid-column-end: 5;
+			grid-row-start: 9;
+			grid-row-end: 15;
+			margin-top: 20px;
+		}
+		.CVbody p {
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			text-align: justify;
+			font-weight: 300;
+			margin-bottom: 40px;
+		}
+		.linkbuttonCV {
+			margin-top: 20px;
+			grid-column-start: 3;
+			grid-row-start: 15;
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonCVbtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonCV a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
+/* web narrow */
+@media all and (min-width: 960px) {
 	.CVblock {
 		display: grid;
 		grid-template-columns: 3fr 13fr 1fr 15fr 3fr;
-		grid-template-rows: repeat(17, 1fr);
+		grid-template-rows: repeat(15, 1fr);
 		text-decoration: none;
 		height:650px;
 	}
@@ -890,32 +1012,34 @@ footer nav {
 			grid-column: 4;
 			grid-row-start: 4;
 			grid-row-end: 15;
+			display: block;
 		}
 		.CVtitle {
 			grid-column: 2;
-			grid-row-start: 6;
-			grid-row-end: 8;
+			grid-row-start: 2;
+			grid-row-end: 4;
 		}
 		.CVtitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 64px;
 			font-weight: 300;
+			text-align: right;
 		}
 		.CVbody {
 			grid-column: 2;
-			grid-row-start: 8;
-			grid-row-end: 14;
+			grid-row-start: 4;
+			grid-row-end: 10;
 		}
 		.CVbody p {
 			font-family: verdana, sans-serif;
-			font-size: 20px;
+			font-size: 18px;
 			text-align: justify;
 			font-weight: 300;
 		}
 		.linkbuttonCV {
 			grid-column: 2;
-			grid-row-start: 11;
-			grid-row-end: 13;
+			grid-row-start: 8;
+			grid-row-end: 10;
 			display: flex;
 			align-items: center;
 			justify-content: center;	
@@ -938,15 +1062,147 @@ footer nav {
 			}
 			/* ADD display:none for narrow version of profile image when you create that!!!!!!! */	
 }
-/* narrow */
-@media all and (max-width: 1219px) {
-	.CVimage {
-		display: none;
+
+/* web wide */
+@media all and (min-width: 1220px) {
+	.CVblock {
+		display: grid;
+		grid-template-columns: 3fr 13fr 1fr 15fr 3fr;
+		grid-template-rows: repeat(17, 1fr);
+		text-decoration: none;
+		height:650px;
 	}
+	.innerCVimage {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.CVimage {
+			grid-column: 4;
+			grid-row-start: 4;
+			grid-row-end: 15;
+			display: block;
+		}
+		.CVtitle {
+			grid-column: 2;
+			grid-row-start: 6;
+			grid-row-end: 8;
+		}
+		.CVtitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: 300;
+			text-align: right;
+		}
+		.CVbody {
+			grid-column: 2;
+			grid-row-start: 8;
+			grid-row-end: 14;
+		}
+		.CVbody p {
+			font-family: verdana, sans-serif;
+			font-size: 20px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonCV {
+			grid-column: 2;
+			grid-row-start: 11;
+			grid-row-end: 13;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonCVbtt {
+				margin-top: -10px;
+				display: block;
+				padding: 15px 20px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonCV a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+			/* ADD display:none for narrow version of profile image when you create that!!!!!!! */	
 }
 
 /* VIDEO BLOCK */ /* NOT NEEDED FOR HOMEPAGE, REMOVE */
-@media all and (min-width: 1220px) {
+/* mobile */
+.videosection {
+	display: grid;
+	grid-template-columns: .6fr 6fr .6fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .3fr;
+}
+	.videotitle {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.videotitle h2 {
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 86px;
+		font-weight: 300;
+	}
+	.videoblock {
+		grid-column-start: 2;
+		grid-row-start: 3;
+		grid-row-end: 11;
+	}
+	.videodesc {
+		grid-column-start: 2;
+		grid-row-start: 11;
+		grid-row-end: 12;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+/* tablet */
+@media all and (min-width: 700px) {
+	.videosection {
+		display: grid;
+		grid-template-columns: 1fr 6fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .3fr;
+	}
+		.videotitle {
+			grid-column-start: 2;
+			grid-row-start: 1;
+			grid-row-end: 3;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.videotitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 86px;
+			font-weight: 300;
+		}
+		.videoblock {
+			grid-column-start: 2;
+			grid-row-start: 3;
+			grid-row-end: 11;
+		}
+		.videodesc {
+			grid-column-start: 2;
+			grid-row-start: 11;
+			grid-row-end: 12;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+}
+/* web */
+@media all and (min-width: 960px) {
 	.videosection {
 		display: grid;
 		grid-template-columns: 1fr 5fr 1fr;
@@ -981,8 +1237,30 @@ footer nav {
 		}
 }
 
-
+/*  PROJECTS BLOCK - accordion for mobile and carousel for tablet and up */
+/* mobile */
+.carouselbox {
+	display: none;
+}
+.project-block-title {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 1fr;
+}
+.project-title {
+	grid-column: 2;
+	grid-row: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.project-block-title h2 {
+	font-size: 86px;
+	font-family: wireone-regular, times new roman, serif;
+	font-weight: 300;
+}
   /* custom Carousel styling */
+@media all and (min-width: 700px) {
 .c-item {
 	height: 480px;
 }
@@ -1056,8 +1334,84 @@ footer nav {
 .carousel-control-prev {
     filter: invert(100%);
 }
-	/* wide */
+}
+	/* tablet */
+	@media all and (min-width: 700px) {
+		#projects-accordion {
+			display: none;
+		}
+		.carouselbox {
+			display: grid;
+			grid-template-columns: .5fr 5fr .5fr;
+			grid-template-rows: 1fr 8fr 1fr;
+		}
+		.project-block-title {
+			display: grid;
+			grid-template-columns: 1fr 5fr 1fr;
+			grid-template-rows: 1fr;
+		}
+		.project-title {
+			grid-column: 2;
+			grid-row: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.project-block-title h2 {
+			font-size: 86px;
+			font-family: wireone-regular, times new roman, serif;
+			font-weight: 300;
+		}
+		.c-grid {
+			grid-column: 2;
+			grid-row: 2;
+		}
+		.carousel-control-prev,
+		.carousel-control-next {
+			margin: -80px;
+		}
+	}
+	/* web narrow */
+	@media all and (min-width: 960px) {
+		#projects-accordion {
+			display: none;
+		}
+		.carouselbox {
+			display: grid;
+			grid-template-columns: .8fr 7fr .8fr;
+			grid-template-rows: 1fr 8fr 1fr;
+		}
+		.project-block-title {
+			display: grid;
+			grid-template-columns: 1fr 5fr 1fr;
+			grid-template-rows: 1fr;
+		}
+		.project-title {
+			grid-column: 2;
+			grid-row: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.project-block-title h2 {
+			font-size: 86px;
+			font-family: wireone-regular, times new roman, serif;
+			font-weight: 300;
+		}
+		.c-grid {
+			grid-column: 2;
+			grid-row: 2;
+		}
+		.carousel-control-prev,
+		.carousel-control-next {
+			margin: 0;
+		}
+	}
+	/* web wide */
 @media all and (min-width: 1220px) {
+	#projects-accordion {
+		display: none;
+	}
 	.carouselbox {
 		display: grid;
 		grid-template-columns: 1fr 5fr 1fr;
@@ -1084,9 +1438,13 @@ footer nav {
 		grid-column: 2;
 		grid-row: 2;
 	}
+	.carousel-control-prev,
+	.carousel-control-next {
+		margin: 0;
+	}
 }
 
-/* Skip to mainn content */
+/* Skip to main content */
 .skip-to-main-content-link {
 	position: absolute;
 	left: -9999px;
