@@ -375,8 +375,8 @@ footer nav {
 	justify-content: center;
 	flex-direction: column;
 	text-decoration: none;
-	height: 650px;
-	margin-top: 100px;
+	height: 400px;
+	margin-top: 50px;
 }
 	/* name element on homepage */
 	.name {
@@ -384,8 +384,8 @@ footer nav {
 		}
 		.name h1{
 			font-family: wireone-regular, times new roman, serif;
-			font-size: 180px;
-			line-height: 132px;
+			font-size: 130px;
+			line-height: 100px;
 			font-weight: 300;
 			white-space: nowrap;
 			margin-top: 10px;
@@ -395,7 +395,7 @@ footer nav {
 	}
 		.namesubtitle h2{
 			font-family: wireone-regular, times new roman, serif;
-			font-size: 60px;
+			font-size: 45px;
 			padding: 0px 30px;
 			font-weight: 300;
 			white-space: nowrap;
@@ -591,8 +591,151 @@ footer nav {
 				}
 }
 /* ABOUT BLOCK */
-/* web wide*/
-@media all and (min-width: 1220px) {
+/* mobile */
+.aboutimage {
+	display: none;
+}
+.about {
+	display: grid;
+	grid-template-columns: .5fr .5fr 6fr .5fr .5fr;
+	grid-template-rows: repeat(17 1fr);
+	text-decoration: none;
+}
+.inneraboutimage {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+	.aboutimage-narrow {
+		display: block;
+		grid-column: 3;
+		grid-row-start: 2;
+		grid-row-end: 8;
+		object-fit: contain;
+	}
+	.abouttitle {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	.abouttitle h2 {
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 86px;
+		font-weight: 300;
+		text-align: center;
+	}
+	.aboutbody {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 9;
+		grid-row-end: 15;
+		margin-top: 20px;
+	}
+	.aboutbody p {
+		font-family: verdana, sans-serif;
+		font-size: 16px;
+		text-align: justify;
+		font-weight: 300;
+	}
+	.linkbuttonabout {
+		margin-top: 20px;
+		grid-column-start: 3;
+		grid-row-start: 15;
+		grid-row-end: 17;
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+	}
+		 /* Useful button for elsewhere too! */
+		 .linkbuttonaboutbtt {
+			margin-top: -22px;
+			display: block;
+			padding: 15px 10px;
+			font-family: verdana, sans-serif;
+			font-size: 22px;
+			text-align: center;
+			background-color:#FFC107;
+			border-radius: 15px;
+			color:#2F2E2E;
+		}
+		.linkbuttonabout a:hover { /* when copying, .______ with relevant class tag */
+			text-decoration: none;
+			background-color: #cbc1a3;
+		}
+/* tablet */
+@media all and (min-width: 700px) {
+	.aboutimage {
+		display: none;
+	}
+	.about {
+		display: grid;
+		grid-template-columns: 1fr .5fr 5fr .5fr 1fr;
+		grid-template-rows: repeat(17 1fr);
+		text-decoration: none;
+	}
+	.inneraboutimage {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.aboutimage-narrow {
+			display: block;
+			grid-column: 3;
+			grid-row-start: 2;
+			grid-row-end: 8;
+			object-fit: contain;
+		}
+		.abouttitle {
+			grid-column: 3;
+			grid-row: 1;
+		}
+		.abouttitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 86px;
+			font-weight: 300;
+			text-align: center;
+		}
+		.aboutbody {
+			grid-column-start: 2;
+			grid-column-end: 5;
+			grid-row-start: 9;
+			grid-row-end: 15;
+			margin-top: 20px;
+		}
+		.aboutbody p {
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonabout {
+			margin-top: 20px;
+			grid-column-start: 3;
+			grid-row-start: 15;
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonaboutbtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonabout a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
+/* web narrow */
+@media all and (min-width: 960px) {
+	.aboutimage-narrow {
+		display: none;
+	}
 	.about {
 		display: grid;
 		grid-template-columns: 3fr 15fr 1fr 13fr 3fr;
@@ -605,6 +748,76 @@ footer nav {
 		grid-template-rows: 1fr;
 	}
 		.aboutimage {
+			display: block;
+			grid-column: 2;
+			grid-row-start: 6;
+			grid-row-end: 17;
+		}
+		.abouttitle {
+			grid-column: 4;
+			grid-row-start: 4;
+			grid-row-end: 6;
+		}
+		.abouttitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: 300;
+			text-align: left
+		}
+		.aboutbody {
+			grid-column: 4;
+			grid-row-start: 6;
+			grid-row-end: 15;
+		}
+		.aboutbody p {
+			font-family: verdana, sans-serif;
+			font-size: 18px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonabout {
+			grid-column-start: 4;
+			grid-row-start: 15;
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonaboutbtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonabout a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
+/* web wide*/
+@media all and (min-width: 1220px) {
+	.aboutimage-narrow {
+		display: none;
+	}
+	.about {
+		display: grid;
+		grid-template-columns: 3fr 15fr 1fr 13fr 3fr;
+		grid-template-rows: repeat(17, 1fr);
+		text-decoration: none;
+		height:650px;
+	}
+	.inneraboutimage {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.aboutimage {
+			display: block;
 			grid-column: 2;
 			grid-row-start: 4;
 			grid-row-end: 17;
@@ -618,6 +831,7 @@ footer nav {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 64px;
 			font-weight: 300;
+			text-align: left
 		}
 		.aboutbody {
 			grid-column: 4;
@@ -654,12 +868,6 @@ footer nav {
 				text-decoration: none;
 				background-color: #cbc1a3;
 			}
-}
-/* narrow */
-@media all and (max-width: 1219px) {
-	.aboutimage {
-		display: none;
-	}
 }
 
 /* PROJECTS BLOCK */
