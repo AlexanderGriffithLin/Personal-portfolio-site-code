@@ -625,7 +625,7 @@ footer nav {
 	.abouttitle h2 {
 		font-family: wireone-regular, times new roman, serif;
 		font-size: 86px;
-		font-weight: 300;
+		font-weight: bold;
 		text-align: center;
 	}
 	.aboutbody {
@@ -695,7 +695,7 @@ footer nav {
 		.abouttitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 86px;
-			font-weight: 300;
+			font-weight: bold;
 			text-align: center;
 		}
 		.aboutbody {
@@ -767,7 +767,7 @@ footer nav {
 		.abouttitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 64px;
-			font-weight: 300;
+			font-weight: bold;
 			text-align: left
 		}
 		.aboutbody {
@@ -836,7 +836,7 @@ footer nav {
 		.abouttitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 64px;
-			font-weight: 300;
+			font-weight: bold;
 			text-align: left
 		}
 		.aboutbody {
@@ -893,7 +893,7 @@ footer nav {
 	.CVtitle h2 {
 		font-family: wireone-regular, times new roman, serif;
 		font-size: 86px;
-		font-weight: 300;
+		font-weight: bold;
 		text-align: center;
 		white-space: nowrap;
 	}
@@ -953,7 +953,7 @@ footer nav {
 		.CVtitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 86px;
-			font-weight: 300;
+			font-weight: bold;
 			text-align: center;
 		}
 		.CVbody {
@@ -1023,7 +1023,7 @@ footer nav {
 		.CVtitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 64px;
-			font-weight: 300;
+			font-weight: bold;
 			text-align: right;
 		}
 		.CVbody {
@@ -1091,7 +1091,7 @@ footer nav {
 		.CVtitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 64px;
-			font-weight: 300;
+			font-weight: bold;
 			text-align: right;
 		}
 		.CVbody {
@@ -1129,11 +1129,10 @@ footer nav {
 			.linkbuttonCV a:hover { /* when copying, .______ with relevant class tag */
 				text-decoration: none;
 				background-color: #cbc1a3;
-			}
-			/* ADD display:none for narrow version of profile image when you create that!!!!!!! */	
+			}	
 }
 
-/* VIDEO BLOCK */ /* NOT NEEDED FOR HOMEPAGE, REMOVE */
+/* VIDEO BLOCK */
 /* mobile */
 .videosection {
 	display: grid;
@@ -1151,7 +1150,7 @@ footer nav {
 	.videotitle h2 {
 		font-family: wireone-regular, times new roman, serif;
 		font-size: 86px;
-		font-weight: 300;
+		font-weight: bold;
 	}
 	.videoblock {
 		grid-column-start: 2;
@@ -1185,7 +1184,7 @@ footer nav {
 		.videotitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 86px;
-			font-weight: 300;
+			font-weight: bold;
 		}
 		.videoblock {
 			grid-column-start: 2;
@@ -1220,7 +1219,7 @@ footer nav {
 		.videotitle h2 {
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 64px;
-			font-weight: 300;
+			font-weight: bold;
 		}
 		.videoblock {
 			grid-column-start: 2;
@@ -1258,7 +1257,7 @@ footer nav {
 .project-block-title h2 {
 	font-size: 86px;
 	font-family: wireone-regular, times new roman, serif;
-	font-weight: 300;
+	font-weight: bold;
 }
   /* custom Carousel styling */
 @media all and (min-width: 770px) {
@@ -1325,7 +1324,7 @@ footer nav {
 	width: 18px;
 	height: 18px;
 	border-radius: 0%;
-	background-color: #FFC107;
+	background-color: #705504;
 }
 .carousel-control-next,
 .carousel-control-prev {
@@ -1357,7 +1356,7 @@ footer nav {
 		.project-block-title h2 {
 			font-size: 86px;
 			font-family: wireone-regular, times new roman, serif;
-			font-weight: 300;
+			font-weight: bold;
 		}
 		.c-grid {
 			grid-column: 2;
@@ -1397,7 +1396,7 @@ footer nav {
 		.project-block-title h2 {
 			font-size: 86px;
 			font-family: wireone-regular, times new roman, serif;
-			font-weight: 300;
+			font-weight: bold;
 		}
 		.c-grid {
 			grid-column: 2;
@@ -1437,7 +1436,7 @@ footer nav {
 	.project-block-title h2 {
 		font-size: 86px;
 		font-family: wireone-regular, times new roman, serif;
-		font-weight: 300;
+		font-weight: bold;
 	}
 	.c-grid {
 		grid-column: 2;
@@ -1495,3 +1494,278 @@ footer nav {
 	font-family: verdana, sans-serif;
 	font-size: 24px;
 }
+
+/* 3 item block */
+/* mobile */
+.webpostersection {
+	display: none;
+}
+.postersection {
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-template-rows: 1fr 4fr .2fr 4fr .2fr 4fr .5fr;
+}
+	.postertitle {
+		grid-column-start: 2;
+		grid-row: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.postertitle h2 {
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 86px;
+		font-weight: bold;
+	}
+	.posterblock-1 {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		object-fit: contain;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.poster1 {
+			grid-column: 1;
+			grid-template-columns: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	.posterblock-2 {
+		grid-column-start: 2;
+		grid-row-start: 4;
+		object-fit: contain;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.poster2 {
+			grid-column: 1;
+			grid-template-columns: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	.posterblock-3 {
+		grid-column-start: 2;
+		grid-row-start: 6;
+		object-fit: contain;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.poster3 {
+			grid-column: 1;
+			grid-template-columns: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	.posterdesc {
+		grid-column-start: 2;
+		grid-row-start: 7;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+/* web narrow */
+@media all and (min-width: 960px) {
+	.postersection {
+		display: none;
+	}
+	.webpostersection {
+		display: grid;
+		grid-template-columns: 1fr 4fr .3fr 4fr .3fr 4fr 1fr;
+		grid-template-rows: 1fr .1fr 5fr 1fr;
+	}
+		.webpostertitle {
+			grid-column-start: 4;
+			grid-row: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.webpostertitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 86px;
+			font-weight: bold;
+		}
+		.webposterblock-1 {
+			grid-column-start: 2;
+			grid-row-start: 3;
+			object-fit: contain;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+			.webposter1 {
+				grid-column: 1;
+				grid-template-columns: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				object-fit: contain;
+			}
+		.webposterblock-2 {
+			grid-column-start: 4;
+			grid-row-start: 3;
+			object-fit: contain;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+			.webposter2 {
+				grid-column: 1;
+				grid-template-columns: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				object-fit: contain;
+			}
+		.webposterblock-3 {
+			grid-column-start: 6;
+			grid-row-start: 3;
+			object-fit: contain;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+			.webposter3 {
+				grid-column: 1;
+				grid-template-columns: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				object-fit: contain;
+			}
+		.webposterdesc {
+			grid-column-start: 4;
+			grid-row-start: 4;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+}
+/* web wide */
+@media all and (min-width: 1220px) {
+	.webpostersection {
+		display: none;
+	}
+	.postersection {
+		display: grid;
+		grid-template-columns: 1fr 4fr .3fr 4fr .3fr 4fr 1fr;
+		grid-template-rows: 1fr .1fr 5fr 1fr;
+	}
+		.postertitle {
+			grid-column-start: 4;
+			grid-row: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.postertitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 86px;
+			font-weight: bold;
+		}
+		.posterblock-1 {
+			grid-column-start: 2;
+			grid-row-start: 3;
+			object-fit: contain;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+			.poster1 {
+				grid-column: 1;
+				grid-template-columns: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				object-fit: contain;
+			}
+		.posterblock-2 {
+			grid-column-start: 4;
+			grid-row-start: 3;
+			object-fit: contain;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+			.poster2 {
+				grid-column: 1;
+				grid-template-columns: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				object-fit: contain;
+			}
+		.posterblock-3 {
+			grid-column-start: 6;
+			grid-row-start: 3;
+			object-fit: contain;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+			.poster3 {
+				grid-column: 1;
+				grid-template-columns: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				object-fit: contain;
+			}
+		.posterdesc {
+			grid-column-start: 4;
+			grid-row-start: 4;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+}
+/* Single poster */
+/* mobile */
+
+.singlepostersection {
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr;
+	grid-template-rows: 1fr 6fr 1fr;
+}
+	.singlepostertitle {
+		grid-column-start: 2;
+		grid-row: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.singlepostertitle h2 {
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 86px;
+		font-weight: bold;
+	}
+	.singleposterblock-1 {
+		grid-column-start: 2;
+		grid-row-start: 2;
+		object-fit: contain;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.singleposter1 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	.singleposterdesc {
+		grid-column-start: 2;
+		grid-row-start: 3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
