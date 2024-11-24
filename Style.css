@@ -1503,7 +1503,7 @@ footer nav {
 .postersection {
 	display: grid;
 	grid-template-columns: 1fr 8fr 1fr;
-	grid-template-rows: 1fr 4fr .2fr 4fr .2fr 4fr .5fr;
+	grid-template-rows: 1fr 4fr .2fr 4fr .2fr 4fr 1fr .6fr .6fr .6fr;
 }
 	.postertitle {
 		grid-column-start: 2;
@@ -1568,7 +1568,7 @@ footer nav {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		text-align: center;
+		text-align: justify;
 	}
 /* web narrow */
 @media all and (min-width: 960px) {
@@ -1578,7 +1578,7 @@ footer nav {
 	.webpostersection {
 		display: grid;
 		grid-template-columns: 1fr 4fr .3fr 4fr .3fr 4fr 1fr;
-		grid-template-rows: 1fr .1fr 5fr 1fr;
+		grid-template-rows: 1fr .1fr 5fr .5fr 1fr;
 	}
 		.webpostertitle {
 			grid-column-start: 4;
@@ -1646,7 +1646,7 @@ footer nav {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			text-align: center;
+			text-align: justify;
 		}
 }
 /* web wide */
@@ -1657,7 +1657,7 @@ footer nav {
 	.postersection {
 		display: grid;
 		grid-template-columns: 1fr 4fr .3fr 4fr .3fr 4fr 1fr;
-		grid-template-rows: 1fr .1fr 5fr 1fr;
+		grid-template-rows: 1fr .1fr 5fr .5fr 1fr;
 	}
 		.postertitle {
 			grid-column-start: 4;
@@ -1725,7 +1725,7 @@ footer nav {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			text-align: center;
+			text-align: justify;
 		}
 }
 /* Single poster */
@@ -1769,3 +1769,52 @@ footer nav {
 		justify-content: center;
 		text-align: center;
 	}
+/* poster links */
+			/* Useful button for elsewhere too! */
+			.posterlink {
+				margin-top: 10px;
+				display: block;
+				padding: 15px 5px;
+				font-family: verdana, sans-serif;
+				font-size: 18px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			@media all and (max-width: 960px) {
+			.posterlink {
+				width: 60%;
+				margin-left: 20%;
+			}
+			.posterlink a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+			.posterlink-left {
+				grid-column: 2;
+				grid-row: 8;
+			}
+			.posterlink-right {
+				grid-column: 2;
+				grid-row: 10;
+			}
+			.posterlink-centre {
+				grid-column: 2;
+				grid-row: 9;
+			}
+		}
+		@media all and (min-width: 960px) {
+			.posterlink-left {
+				grid-column: 2;
+				grid-row: 5;
+			}
+			.posterlink-right {
+				grid-column: 4;
+				grid-row: 5;
+			}
+			.posterlink-centre {
+				grid-column: 6;
+				grid-row: 5;
+			}
+		}
