@@ -41,7 +41,7 @@ p {
 }
 .logo-positioner {
 	margin-left: -20px;
-	vertical-align: 35px;
+	vertical-align: 10px;
 }
 		/* Navigation menu styling*/
 			nav.header {
@@ -1814,18 +1814,11 @@ footer nav {
 				grid-row: 5;
 			}
 			.posterlink-right {
-				grid-column: 4;
-				grid-row: 5;
-			}
-			.posterlink-centre {
 				grid-column: 6;
 				grid-row: 5;
 			}
-		}
-		@font-face { /*Logo Font */
-			font-family: 'LogoFont'; /*Use this name for the font*/
-			src: url(assets/fonts/LXGWWenKaiMonoTC-Regular.ttf);
-		}
-		.logofont {
-			font-family: LogoFont, sans-serif;
+			.posterlink-centre {
+				grid-column: 4;
+				grid-row: 5;
+			}
 		}
