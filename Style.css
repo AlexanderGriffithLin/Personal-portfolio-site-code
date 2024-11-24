@@ -63,7 +63,7 @@ p {
 			.item.button {
 				padding: 9px 5px;
 				}
-			@media all and (max-width: 700px) { /* Only for mobile version, so contact will turn yellow on hover for mobile but not for tablet or desktop */
+			@media all and (max-width: 770px) { /* Only for mobile version, so contact will turn yellow on hover for mobile but not for tablet or desktop */
 				.item a:hover,
 				.item a:hover::after {
 					color: #FFC107 /* yellow */;
@@ -119,7 +119,7 @@ p {
 					font-family: "Phosphor-Thin";
    					font-size: 24px;
     				line-height: 32px;
-    				font-weight: 700; 
+    				font-weight: 770; 
     				content: "  \e050"; /*arrow pointing down*/
     				color: #2F2E2E;
     				padding-left: 5px;
@@ -139,7 +139,7 @@ p {
 				}
 		/* navigation menu extras: tablet */
 			/* makes the scaling possible */
-			@media all and (min-width: 700px) {
+			@media all and (min-width: 770px) {
 				.menu {
 					justify-content: center;
 				}
@@ -359,7 +359,7 @@ footer nav {
 			grid-column-end: 11;
 		}
 	}
-	@media all and (max-width: 700px) { /* right aligns the contact info and RTT on mobile */
+	@media all and (max-width: 770px) { /* right aligns the contact info and RTT on mobile */
 		.contactdetails {
 			grid-row-start: 2;
 			grid-row-end: 15;
@@ -402,7 +402,7 @@ footer nav {
 		.namesubtitle h2{
 			font-family: wireone-regular, times new roman, serif;
 			font-size: 45px;
-			padding: 0px 30px;
+			padding: 0px 0px;
 			font-weight: 300;
 			white-space: nowrap;
 		}
@@ -429,7 +429,7 @@ footer nav {
 				background-color: #cbc1a3;
 			}
 /* tablet */
-@media all and (min-width: 700px) {
+@media all and (min-width: 770px) {
 	.nametitle {
 		display: flex;
 		align-items: center;
@@ -667,7 +667,7 @@ footer nav {
 			background-color: #cbc1a3;
 		}
 /* tablet */
-@media all and (min-width: 700px) {
+@media all and (min-width: 770px) {
 	.aboutimage {
 		display: none;
 	}
@@ -895,6 +895,7 @@ footer nav {
 		font-size: 86px;
 		font-weight: 300;
 		text-align: center;
+		white-space: nowrap;
 	}
 	.CVbody {
 		grid-column-start: 2;
@@ -935,7 +936,7 @@ footer nav {
 			background-color: #cbc1a3;
 		}
 /* tablet */
-@media all and (min-width: 700px) {
+@media all and (min-width: 770px) {
 	.CVimage {
 		display: none;
 	}
@@ -1167,7 +1168,7 @@ footer nav {
 		text-align: center;
 	}
 /* tablet */
-@media all and (min-width: 700px) {
+@media all and (min-width: 770px) {
 	.videosection {
 		display: grid;
 		grid-template-columns: 1fr 6fr 1fr;
@@ -1260,7 +1261,7 @@ footer nav {
 	font-weight: 300;
 }
   /* custom Carousel styling */
-@media all and (min-width: 700px) {
+@media all and (min-width: 770px) {
 .c-item {
 	height: 480px;
 }
@@ -1297,10 +1298,6 @@ footer nav {
 				text-decoration: none;
 				background-color: #cbc1a3;
 			}
-.c-inner-img {
-	margin-bottom: 30px;
-	margin-inline-start: 21%;
-}
 .c-inner-img-caption {
 	margin-bottom: 30px;
 	width: 280px;
@@ -1336,13 +1333,13 @@ footer nav {
 }
 }
 	/* tablet */
-	@media all and (min-width: 700px) {
+	@media all and (min-width: 770px) {
 		#projects-accordion {
 			display: none;
 		}
 		.carouselbox {
 			display: grid;
-			grid-template-columns: .5fr 5fr .5fr;
+			grid-template-columns: 1fr 5fr 1fr;
 			grid-template-rows: 1fr 8fr 1fr;
 		}
 		.project-block-title {
@@ -1369,6 +1366,10 @@ footer nav {
 		.carousel-control-prev,
 		.carousel-control-next {
 			margin: -80px;
+		}
+		.c-inner-img {
+			margin-bottom: 30px;
+			margin-inline-start: 15%;
 		}
 	}
 	/* web narrow */
@@ -1406,6 +1407,10 @@ footer nav {
 		.carousel-control-next {
 			margin: 0;
 		}
+		.c-inner-img {
+			margin-bottom: 30px;
+			margin-inline-start: 21%;
+		}
 	}
 	/* web wide */
 @media all and (min-width: 1220px) {
@@ -1442,6 +1447,10 @@ footer nav {
 	.carousel-control-next {
 		margin: 0;
 	}
+	.c-inner-img {
+		margin-bottom: 30px;
+		margin-inline-start: 21%;
+	}
 }
 
 /* Skip to main content */
@@ -1460,3 +1469,29 @@ footer nav {
 	transform: translateX(-50%);
 	opacity: 1;
   }
+
+  /* Accordion Styling */
+  .a-box {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: .5fr 8fr .5fr;
+  }
+  .accordion {
+	grid-row: 2;
+	grid-column: 2;
+	--bs-accordion-btn-color: #2f2e2e;
+	--bs-accordion-btn-bg: #9C7DB4;
+	--bs-accordion-active-color: #2f2e2e;
+	--bs-accordion-active-bg: #8966A4;
+	border: #2F2E2E;
+  }
+  .accordion-body {
+	background-color: #b399c7;
+  }
+.accordion-item {
+	border-radius: 0 !important;
+}
+.accordion h3 {
+	font-family: verdana, sans-serif;
+	font-size: 24px;
+}
