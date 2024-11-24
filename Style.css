@@ -39,6 +39,10 @@ p {
 	font-weight: 500;
 	padding: 10px;
 }
+.logo-positioner {
+	margin-left: -20px;
+	vertical-align: 35px;
+}
 		/* Navigation menu styling*/
 			nav.header {
 				background: #8966A4; /*Deep purple, not the band*/
@@ -1817,4 +1821,11 @@ footer nav {
 				grid-column: 6;
 				grid-row: 5;
 			}
+		}
+		@font-face { /*Logo Font */
+			font-family: 'LogoFont'; /*Use this name for the font*/
+			src: url(assets/fonts/LXGWWenKaiMonoTC-Regular.ttf);
+		}
+		.logofont {
+			font-family: LogoFont, sans-serif;
 		}
