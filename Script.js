@@ -62,7 +62,9 @@ function topFunction() {
 
 //Show email
 function outlink1() {
-    alert("Email me at N00201997@iadt.ie")
+   var stremail = "N00201997@iadt.ie";
+   navigator.clipboard.writeText(stremail);
+    alert("Email me at " + stremail + "\n\nEmail address automatically copied to clipboard for you to paste into your email client");
 }
 
 
@@ -70,7 +72,7 @@ function outlink1() {
 function outlink2() {
     let text;
     if(confirm("Leave to go to external site?") == true) {
-        window.location.replace("https://ie.linkedin.com/in/alexander-griffith-lin")
+        window.location.replace("https://ie.linkedin.com/in/alexander-griffith-lin");
     } else {
         //do nothing
     }
@@ -81,8 +83,14 @@ function outlink2() {
 function outlink3() {
     let text;
     if(confirm("Leave to go to external site?") == true) {
-        window.location.replace("https://github.com/AlexanderGriffithLin")
+        window.location.replace("https://github.com/AlexanderGriffithLin");
     } else {
         //do nothing
     }
 }
+
+// Highlight Box
+$('#contactbtt').click(function(){
+    $('.contactdetails')
+        .effect("highlight",{},3000); 
+ });
