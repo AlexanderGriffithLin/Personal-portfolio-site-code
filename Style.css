@@ -2341,3 +2341,15 @@ footer nav {
 	padding: 10px;
 	width: 250px; 
 }
+
+/*page title (not present on index) */
+.top-title h1 {
+	font-family: wireone-regular, serif;
+	font-size: 120px;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	line-height: 90px;
+}
