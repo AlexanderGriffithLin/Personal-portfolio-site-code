@@ -59,3 +59,30 @@ function topFunction() {
     document.body.scrollTop = 0; // Safari
     document.documentElement.scrollTop = 0; // Chromium, Firefox, IE and Opera
   }
+
+//Show email
+function outlink1() {
+    alert("Email me at N00201997@iadt.ie")
+}
+
+
+//External link LinkedIn
+function outlink2() {
+    let text;
+    if(confirm("Leave to go to external site?") == true) {
+        window.location.replace("https://ie.linkedin.com/in/alexander-griffith-lin")
+    } else {
+        //do nothing
+    }
+}
+
+
+//External link GitHub
+function outlink3() {
+    let text;
+    if(confirm("Leave to go to external site?") == true) {
+        window.location.replace("https://github.com/AlexanderGriffithLin")
+    } else {
+        //do nothing
+    }
+}
