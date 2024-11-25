@@ -1738,7 +1738,7 @@ footer nav {
 .singlepostersection {
 	display: grid;
 	grid-template-columns: 1fr 6fr 1fr;
-	grid-template-rows: 1fr 6fr 1fr;
+	grid-template-rows: 1fr 4.5fr 1fr;
 }
 	.singlepostertitle {
 		grid-column-start: 2;
@@ -1822,3 +1822,517 @@ footer nav {
 				grid-row: 5;
 			}
 		}
+
+
+
+/* REVERSE ABOUT BLOCK */
+/* mobile */
+.reverseimage {
+	display: none;
+}
+.reverse {
+	display: grid;
+	grid-template-columns: .5fr .5fr 6fr .5fr .5fr;
+	grid-template-rows: repeat(17 1fr);
+	text-decoration: none;
+}
+.innerreverseimage {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+	.reverseimage-narrow {
+		display: block;
+		grid-column: 3;
+		grid-row-start: 2;
+		grid-row-end: 8;
+		object-fit: contain;
+	}
+	.reversetitle {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	.reversetitle h2 {
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 86px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.reversebody {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 9;
+		grid-row-end: 15;
+		margin-top: 20px;
+	}
+	.reversebody p {
+		font-family: verdana, sans-serif;
+		font-size: 16px;
+		text-align: justify;
+		font-weight: 300;
+	}
+	.linkbuttonreverse {
+		margin-top: 20px;
+		grid-column-start: 3;
+		grid-row-start: 15;
+		grid-row-end: 17;
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+	}
+		 /* Useful button for elsewhere too! */
+		 .linkbuttonreversebtt {
+			margin-top: -22px;
+			display: block;
+			padding: 15px 10px;
+			font-family: verdana, sans-serif;
+			font-size: 22px;
+			text-align: center;
+			background-color:#FFC107;
+			border-radius: 15px;
+			color:#2F2E2E;
+		}
+		.linkbuttonreverse a:hover { /* when copying, .______ with relevant class tag */
+			text-decoration: none;
+			background-color: #cbc1a3;
+		}
+/* tablet */
+@media all and (min-width: 770px) {
+	.reverseimage {
+		display: none;
+	}
+	.reverse {
+		display: grid;
+		grid-template-columns: 1fr .5fr 5fr .5fr 1fr;
+		grid-template-rows: repeat(17 1fr);
+		text-decoration: none;
+	}
+	.innerreverseimage {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.reverseimage-narrow {
+			display: block;
+			grid-column: 3;
+			grid-row-start: 2;
+			grid-row-end: 8;
+			object-fit: contain;
+		}
+		.reversetitle {
+			grid-column: 3;
+			grid-row: 1;
+		}
+		.reversetitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 86px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.reversebody {
+			grid-column-start: 2;
+			grid-column-end: 5;
+			grid-row-start: 9;
+			grid-row-end: 15;
+			margin-top: 20px;
+		}
+		.reversebody p {
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonreverse {
+			margin-top: 20px;
+			grid-column-start: 3;
+			grid-row-start: 15;
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonreversebtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonreverse a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
+/* web narrow */
+@media all and (min-width: 960px) {
+	.reverseimage-narrow {
+		display: none;
+	}
+	.reverse {
+		display: grid;
+		grid-template-columns: 3fr 13fr 1fr 15fr 3fr;
+		grid-template-rows: repeat(17, 1fr);
+		text-decoration: none;
+		height:650px;
+	}
+	.innerreverseimage {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.reverseimage {
+			display: block;
+			grid-column: 4;
+			grid-row-start: 6;
+			grid-row-end: 17;
+		}
+		.reversetitle {
+			grid-column: 2;
+			grid-row-start: 4;
+			grid-row-end: 6;
+		}
+		.reversetitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: bold;
+			text-align: left
+		}
+		.reversebody {
+			grid-column: 2;
+			grid-row-start: 6;
+			grid-row-end: 15;
+		}
+		.reversebody p {
+			font-family: verdana, sans-serif;
+			font-size: 18px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonreverse {
+			grid-column-start: 2;
+			grid-row-start: 15;
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonreversebtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonreverse a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
+/* web wide*/
+@media all and (min-width: 1220px) {
+	.reverseimage-narrow {
+		display: none;
+	}
+	.reverse {
+		display: grid;
+		grid-template-columns: 3fr 13fr 1fr 15fr 3fr;
+		grid-template-rows: repeat(17, 1fr);
+		text-decoration: none;
+		height:650px;
+	}
+	.innerreverseimage {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+		.reverseimage {
+			display: block;
+			grid-column: 4;
+			grid-row-start: 4;
+			grid-row-end: 17;
+		}
+		.reversetitle {
+			grid-column: 2;
+			grid-row-start: 4;
+			grid-row-end: 6;
+		}
+		.reversetitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: bold;
+			text-align: left
+		}
+		.reversebody {
+			grid-column: 2;
+			grid-row-start: 6;
+			grid-row-end: 14;
+		}
+		.reversebody p {
+			font-family: verdana, sans-serif;
+			font-size: 20px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonreverse {
+			grid-column-start: 2;
+			grid-row-start: 15;
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonreversebtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonreverse a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
+
+/* No Image ABOUT BLOCK */
+/* mobile */
+.simple {
+	display: grid;
+	grid-template-columns: .5fr .5fr 6fr .5fr .5fr;
+	grid-template-rows: repeat(17 1fr);
+	text-decoration: none;
+}
+	.simpletitle {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	.simpletitle h2 {
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 86px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.simplebody {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 9;
+		grid-row-end: 15;
+		margin-top: 20px;
+	}
+	.simplebody p {
+		font-family: verdana, sans-serif;
+		font-size: 16px;
+		text-align: justify;
+		font-weight: 300;
+	}
+	.linkbuttonsimple {
+		margin-top: 20px;
+		grid-column-start: 3;
+		grid-row-start: 15;
+		grid-row-end: 17;
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+	}
+		 /* Useful button for elsewhere too! */
+		 .linkbuttonsimplebtt {
+			margin-top: -22px;
+			display: block;
+			padding: 15px 10px;
+			font-family: verdana, sans-serif;
+			font-size: 22px;
+			text-align: center;
+			background-color:#FFC107;
+			border-radius: 15px;
+			color:#2F2E2E;
+		}
+		.linkbuttonsimple a:hover { /* when copying, .______ with relevant class tag */
+			text-decoration: none;
+			background-color: #cbc1a3;
+		}
+/* tablet */
+@media all and (min-width: 770px) {
+	.simple {
+		display: grid;
+		grid-template-columns: 1fr .5fr 5fr .5fr 1fr;
+		grid-template-rows: repeat(17 1fr);
+		text-decoration: none;
+	}
+		.simpletitle {
+			grid-column: 3;
+			grid-row: 1;
+		}
+		.simpletitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 86px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.simplebody {
+			grid-column-start: 2;
+			grid-column-end: 5;
+			grid-row-start: 9;
+			grid-row-end: 15;
+			margin-top: 20px;
+		}
+		.simplebody p {
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonsimple {
+			margin-top: 20px;
+			grid-column-start: 3;
+			grid-row-start: 15;
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonsimplebtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonsimple a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
+/* web narrow */
+@media all and (min-width: 960px) {
+	.simple {
+		display: grid;
+		grid-template-columns: 3fr 29fr 3fr;
+		grid-template-rows: repeat(15, 1fr);
+		text-decoration: none;
+		height:650px;
+	}
+		.simpletitle {
+			grid-column: 2;
+			grid-row-start: 4;
+			grid-row-end: 6;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.simpletitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: bold;
+			text-align: left
+		}
+		.simplebody {
+			grid-column: 2;
+			grid-row-start: 6;
+			grid-row-end: 15;
+		}
+		.simplebody p {
+			font-family: verdana, sans-serif;
+			font-size: 18px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonsimple {
+			grid-column-start: 2;
+			grid-row-start: 11;
+			grid-row-end: 13;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonsimplebtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonsimple a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
+/* web wide*/
+@media all and (min-width: 1220px) {
+	.simple {
+		display: grid;
+		grid-template-columns: 3fr 29fr 3fr;
+		grid-template-rows: repeat(15, 1fr);
+		text-decoration: none;
+		height:650px;
+	}
+		.simpletitle {
+			grid-column: 2;
+			grid-row-start: 4;
+			grid-row-end: 6;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.simpletitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: bold;
+			text-align: left
+		}
+		.simplebody {
+			grid-column: 2;
+			grid-row-start: 6;
+			grid-row-end: 14;
+		}
+		.simplebody p {
+			font-family: verdana, sans-serif;
+			font-size: 20px;
+			text-align: justify;
+			font-weight: 300;
+		}
+		.linkbuttonsimple {
+			grid-column-start: 2;
+			grid-row-start: 12;
+			grid-row-end: 15;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+			 /* Useful button for elsewhere too! */
+			 .linkbuttonsimplebtt {
+				margin-top: -22px;
+				display: block;
+				padding: 15px 10px;
+				font-family: verdana, sans-serif;
+				font-size: 22px;
+				text-align: center;
+				background-color:#FFC107;
+				border-radius: 15px;
+				color:#2F2E2E;
+			}
+			.linkbuttonsimple a:hover { /* when copying, .______ with relevant class tag */
+				text-decoration: none;
+				background-color: #cbc1a3;
+			}
+}
