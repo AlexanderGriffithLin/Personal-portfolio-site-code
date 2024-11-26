@@ -2387,3 +2387,13 @@ footer nav {
 	margin-top: 50px;
 	line-height: 90px;
 }
+
+/* Image tinting */
+.c-img {
+	filter: brightness(60%) blur(1px);
+}
+
+/* Image border */
+img:not(.c-img) {
+		border: 2px solid #2f2e2e;
+}
