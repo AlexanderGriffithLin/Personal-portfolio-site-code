@@ -2145,15 +2145,6 @@ footer nav {
 		align-items: center;
 		justify-content: center;	
 	}
-	.linkbuttonsimple-higher {
-		grid-column-start: 3;
-		grid-row-start: 15;
-		grid-row-end: 17;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-top: 20px;	
-	}
 		 /* Useful button for elsewhere too! */
 		 .linkbuttonsimplebtt {
 			margin-top: -22px;
@@ -2210,15 +2201,6 @@ footer nav {
 			align-items: center;
 			justify-content: center;	
 		}
-		.linkbuttonsimple-higher {
-			grid-column-start: 3;
-			grid-row-start: 15;
-			grid-row-end: 17;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-top: 20px;	
-		}
 			 /* Useful button for elsewhere too! */
 			 .linkbuttonsimplebtt {
 				margin-top: -22px;
@@ -2241,17 +2223,17 @@ footer nav {
 	.simple {
 		display: grid;
 		grid-template-columns: 3fr 29fr 3fr;
-		grid-template-rows: repeat(15, 1fr);
+		grid-template-rows: 1fr 1.5fr .5fr;
 		text-decoration: none;
-		height:650px;
+		height:450px;
 	}
 		.simpletitle {
 			grid-column: 2;
-			grid-row-start: 4;
-			grid-row-end: 6;
+			grid-row-start: 1;
+			grid-row-end: 1;
 			display: flex;
-			align-items: center;
 			justify-content: center;
+			align-items: center;
 		}
 		.simpletitle h2 {
 			font-family: wireone-regular, times new roman, serif;
@@ -2261,8 +2243,8 @@ footer nav {
 		}
 		.simplebody {
 			grid-column: 2;
-			grid-row-start: 6;
-			grid-row-end: 15;
+			grid-row-start: 2;
+			grid-row-end: 3;
 		}
 		.simplebody p {
 			font-family: verdana, sans-serif;
@@ -2272,16 +2254,8 @@ footer nav {
 		}
 		.linkbuttonsimple {
 			grid-column-start: 2;
-			grid-row-start: 11;
-			grid-row-end: 13;
-			display: flex;
-			align-items: center;
-			justify-content: center;	
-		}
-		.linkbuttonsimple-higher {
-			grid-column-start: 2;
-			grid-row-start: 8;
-			grid-row-end: 12;
+			grid-row-start: 3;
+			grid-row-end: 3;
 			display: flex;
 			align-items: center;
 			justify-content: center;	
@@ -2308,14 +2282,14 @@ footer nav {
 	.simple {
 		display: grid;
 		grid-template-columns: 3fr 29fr 3fr;
-		grid-template-rows: repeat(15, 1fr);
+		grid-template-rows: 1fr 1.5fr .5fr;
 		text-decoration: none;
-		height:650px;
+		height:450px;
 	}
 		.simpletitle {
 			grid-column: 2;
-			grid-row-start: 4;
-			grid-row-end: 6;
+			grid-row-start: 1;
+			grid-row-end: 1;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -2328,8 +2302,8 @@ footer nav {
 		}
 		.simplebody {
 			grid-column: 2;
-			grid-row-start: 6;
-			grid-row-end: 14;
+			grid-row-start: 2;
+			grid-row-end: 3;
 		}
 		.simplebody p {
 			font-family: verdana, sans-serif;
@@ -2339,20 +2313,12 @@ footer nav {
 		}
 		.linkbuttonsimple {
 			grid-column-start: 2;
-			grid-row-start: 12;
-			grid-row-end: 15;
+			grid-row-start: 3;
+			grid-row-end: 3;
 			display: flex;
 			align-items: center;
 			justify-content: center;	
 		}
-		.linkbuttonsimple-higher {
-			grid-column-start: 2;
-			grid-row-start: 8;
-			grid-row-end: 12;
-			display: flex;
-			align-items: center;
-			justify-content: center;	
-		}	
 			 /* Useful button for elsewhere too! */
 			 .linkbuttonsimplebtt {
 				margin-top: -22px;
@@ -2369,6 +2335,140 @@ footer nav {
 				text-decoration: none;
 				background-color: #cbc1a3;
 			}
+}
+
+/* No Image No Button ABOUT BLOCK */
+/* mobile */
+.simpler {
+	display: grid;
+	grid-template-columns: .5fr .5fr 6fr .5fr .5fr;
+	grid-template-rows: repeat(17 1fr);
+	text-decoration: none;
+}
+	.simplertitle {
+		grid-column: 3;
+		grid-row: 1;
+	}
+	.simplertitle h2 {
+		font-family: wireone-regular, times new roman, serif;
+		font-size: 86px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.simplerbody {
+		grid-column-start: 2;
+		grid-column-end: 5;
+		grid-row-start: 9;
+		grid-row-end: 15;
+		margin-top: 20px;
+	}
+	.simplerbody p {
+		font-family: verdana, sans-serif;
+		font-size: 16px;
+		text-align: justify;
+		font-weight: 300;
+	}
+/* tablet */
+@media all and (min-width: 770px) {
+	.simpler {
+		display: grid;
+		grid-template-columns: 1fr .5fr 5fr .5fr 1fr;
+		grid-template-rows: repeat(17 1fr);
+		text-decoration: none;
+	}
+		.simplertitle {
+			grid-column: 3;
+			grid-row: 1;
+		}
+		.simplertitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 86px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.simplerbody {
+			grid-column-start: 2;
+			grid-column-end: 5;
+			grid-row-start: 9;
+			grid-row-end: 15;
+			margin-top: 20px;
+		}
+		.simplerbody p {
+			font-family: verdana, sans-serif;
+			font-size: 16px;
+			text-align: justify;
+			font-weight: 300;
+		}
+}
+/* web narrow */
+@media all and (min-width: 960px) {
+	.simpler {
+		display: grid;
+		grid-template-columns: 3fr 29fr 3fr;
+		grid-template-rows: 1fr 1.5fr .01fr;
+		text-decoration: none;
+		height:450px;
+	}
+		.simplertitle {
+			grid-column: 2;
+			grid-row-start: 1;
+			grid-row-end: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.simplertitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: bold;
+			text-align: left
+		}
+		.simplerbody {
+			grid-column: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+		.simplerbody p {
+			font-family: verdana, sans-serif;
+			font-size: 18px;
+			text-align: justify;
+			font-weight: 300;
+		}
+}
+/* web wide*/
+@media all and (min-width: 1220px) {
+	.simpler {
+		display: grid;
+		grid-template-columns: 3fr 29fr 3fr;
+		grid-template-rows: 1fr 1.5fr .01fr;
+		text-decoration: none;
+		height:450px;
+	}
+		.simplertitle {
+			grid-column: 2;
+			grid-row-start: 1;
+			grid-row-end: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.simplertitle h2 {
+			font-family: wireone-regular, times new roman, serif;
+			font-size: 64px;
+			font-weight: bold;
+			text-align: left
+		}
+		.simplerbody {
+			grid-column: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+		.simplerbody p {
+			font-family: verdana, sans-serif;
+			font-size: 20px;
+			text-align: justify;
+			font-weight: 300;
+		}
 }
 
 #contactdetails { /*highlight box */ 
@@ -2394,6 +2494,6 @@ footer nav {
 }
 
 /* Image border */
-img:not(.c-img) {
+img:not(.c-img, .logo-positioner img) {
 		border: 2px solid #2f2e2e;
 }
