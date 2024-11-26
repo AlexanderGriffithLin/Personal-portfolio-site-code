@@ -2145,6 +2145,15 @@ footer nav {
 		align-items: center;
 		justify-content: center;	
 	}
+	.linkbuttonsimple-higher {
+		grid-column-start: 3;
+		grid-row-start: 15;
+		grid-row-end: 17;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;	
+	}
 		 /* Useful button for elsewhere too! */
 		 .linkbuttonsimplebtt {
 			margin-top: -22px;
@@ -2201,6 +2210,15 @@ footer nav {
 			align-items: center;
 			justify-content: center;	
 		}
+		.linkbuttonsimple-higher {
+			grid-column-start: 3;
+			grid-row-start: 15;
+			grid-row-end: 17;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;	
+		}
 			 /* Useful button for elsewhere too! */
 			 .linkbuttonsimplebtt {
 				margin-top: -22px;
@@ -2256,6 +2274,14 @@ footer nav {
 			grid-column-start: 2;
 			grid-row-start: 11;
 			grid-row-end: 13;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}
+		.linkbuttonsimple-higher {
+			grid-column-start: 2;
+			grid-row-start: 8;
+			grid-row-end: 12;
 			display: flex;
 			align-items: center;
 			justify-content: center;	
@@ -2319,6 +2345,14 @@ footer nav {
 			align-items: center;
 			justify-content: center;	
 		}
+		.linkbuttonsimple-higher {
+			grid-column-start: 2;
+			grid-row-start: 8;
+			grid-row-end: 12;
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+		}	
 			 /* Useful button for elsewhere too! */
 			 .linkbuttonsimplebtt {
 				margin-top: -22px;
